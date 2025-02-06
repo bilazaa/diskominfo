@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Peminjaman Inventory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <div class="w-64 bg-blue-800 text-white p-5">
+            <h2 class="text-2xl font-bold mb-6">Inventory</h2>
+            <ul>
+                <li class="mb-4"><a href="#" class="block p-2 hover:bg-blue-700 rounded">Dashboard</a></li>
+                <li class="mb-4"><a href="#" class="block p-2 hover:bg-blue-700 rounded">Peminjaman</a></li>
+                <li class="mb-4"><a href="#" class="block p-2 hover:bg-blue-700 rounded">Pengembalian</a></li>
+                <li><a href="#" class="block p-2 hover:bg-blue-700 rounded">Laporan</a></li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1 p-6">
+            <h1 class="text-3xl font-semibold mb-6">Dashboard Peminjaman</h1>
+            
+            <!-- Statistik -->
+            <div class="grid grid-cols-3 gap-6">
+                <div class="bg-white p-5 rounded-lg shadow">
+                    <h2 class="text-xl font-bold">Total Peminjaman</h2>
+                    <p class="text-3xl text-blue-600 font-semibold">120</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow">
+                    <h2 class="text-xl font-bold">Sedang Dipinjam</h2>
+                    <p class="text-3xl text-yellow-500 font-semibold">30</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow">
+                    <h2 class="text-xl font-bold">Terlambat</h2>
+                    <p class="text-3xl text-red-500 font-semibold">5</p>
+                </div>
+            </div>
+
+            <!-- Tabel Peminjaman -->
+            <div class="mt-6 bg-white p-5 rounded-lg shadow">
+                <h2 class="text-xl font-bold mb-4">Daftar Peminjaman</h2>
+                <table class="w-full border-collapse border border-gray-300">
+                    <thead>
+                        <tr class="bg-gray-200">
+                            <th class="border p-2">No</th>
+                            <th class="border p-2">Nama</th>
+                            <th class="border p-2">Barang</th>
+                            <th class="border p-2">Tanggal Pinjam</th>
+                            <th class="border p-2">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border p-2 text-center">1</td>
+                            <td class="border p-2">Bela Nurseha</td>
+                            <td class="border p-2">Laptop</td>
+                            <td class="border p-2">02-02-2025</td>
+                            <td class="border p-2 text-green-600 font-semibold">Dipinjam</td>
+                        </tr>
+                        <tr>
+                            <td class="border p-2 text-center">2</td>
+                            <td class="border p-2">Tita Puspita Sari</td>
+                            <td class="border p-2">Proyektor</td>
+                            <td class="border p-2">01-02-2025</td>
+                            <td class="border p-2 text-red-500 font-semibold">Terlambat</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
